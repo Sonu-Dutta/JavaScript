@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating Dom</title>
+    <style>
+        body{
+            background-color: rgb(164, 164, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1>Navigating DOM</h1>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+
+        let nav=document.getElementById('nav');
+        console.log(nav);
+        console.log(nav.innerHTML);
+        //console.log(nav.innerHTML='<li>Dynamic element</li>');
+
+        let cont=document.getElementsByClassName('container');
+        console.log(cont);
+        console.log(cont[0]);
+        console.log(cont[1]);
+
+        let sel=document.querySelector('.container');
+       // console.log("Selector returns: ",sel);
+
+        let select=document.querySelector('#nav'); 
+       // console.log("Selector returns: ",select);
+
+        //#nav>li -->pseudo selector
+        let st=document.querySelectorAll('#nav>li'); 
+        console.log("Selector returns: ",st);
+        console.log(st[0].innerHTML='Inserted');
+
+
+    </script>
+</body>
+</html>
