@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt and Confirm</title>
+    <style>
+        body{
+            background-color: rgb(164, 164, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1>Alert, Prompt and Confirm</h1>
+    <script>
+        //Atert in js dosent't return anything
+        //alert("Good Evening!");
+
+        //let name=prompt("Enter your name: ", "Guest"); //stores value
+        //console.log(name); 
+
+        let deletePost=confirm("Do you really want to delete this post? ");
+        //console.log(deletePost);
+
+        if(deletePost){
+            console.log("Your post has been deleted successfully! ");
+        }
+        else{
+            console.log("Your post has not been deleted! ");
+        }
+
+    </script>
+</body>
+</html>
