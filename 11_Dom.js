@@ -1,5 +1,5 @@
 // DOM- Document Object Model
-document.getElementById('click').click();
+// document.getElementById('click').click();
 document.getElementById('click').style.borderRadius="0.5rem";
 document.getElementById('click').style.backgroundColor="green";
 document.getElementById('click').style.color="white";
@@ -16,15 +16,15 @@ let b = document.getElementsByClassName("container");
 // Get element by class-name
 b[0].classList.add("bg-primary");
 b[0].classList.add("text-success");
-// b[0].classList.remove("text-success");
+ // b[0].classList.remove("text-success");
 
-// console.log(a.innerHTML);//to print content of that element
-// console.log(a.innerText); 
+// console.log(a.innerHTML);//to print content of that element including html tags
+// console.log(a.innerText); //to print content of that element only
 
 // console.log(b[0].innerHTML);
 // console.log(b[0].innerText); 
 
-// Get element by tag-name
+// // Get element by tag-name
 tn = document.getElementsByTagName('p')
 console.log(tn)
 createdElement = document.createElement('p');
@@ -34,5 +34,6 @@ tn[0].appendChild(createdElement);
 createdElement2 = document.createElement('i');
 createdElement2.innerText = "This is a created italic";
 tn[0].replaceChild(createdElement2, createdElement);
-// removeChild(element); ---> removes an element
+// // removeChild(element); ---> removes an element
+
 
