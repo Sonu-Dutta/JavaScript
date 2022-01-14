@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(225, 198, 250);
+}
+.container{
+    box-shadow: 0.2rem 0.3rem rgb(87, 87, 92);
+    margin-top: 4rem;
+}
+.class1{
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(189, 189, 245);
+    border: 0.1rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.link a{
+ text-decoration: none;
+
+}
+input{
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
