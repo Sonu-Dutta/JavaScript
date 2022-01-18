@@ -1,0 +1,26 @@
+console.log("Date Object");
+
+let Date1 = new Date();
+// console.log(Date1);
+// console.log(typeof Date1);
+let Date2 = new Date('2-3-2012 10:45:07');
+// Date2 = new Date('July 10 1971');
+Date2 = new Date('05/26/1975');
+console.log(Date2);
+let a;
+a = Date2.getDay();
+a = Date2.getDate();
+a = Date2.getMinutes();
+a = Date2.getSeconds();
+a = Date2.getHours();
+a = Date2.getTime();
+a = Date2.getMilliseconds();
+a = Date2.getMonth();
+console.log(a);
+Date2.setDate(24);
+Date2.setMonth(0);
+Date2.setFullYear(2020);
+Date2.setMinutes(12);
+Date2.setHours(1);
+Date2.setSeconds(13);
+console.log(Date2);
